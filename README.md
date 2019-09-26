@@ -1,4 +1,4 @@
-# Rock-paper-scissors-game
+# Rock-paper-scissors Hand Game
 
 A JavaScript based Rock-paper-scissors hand game with UI.
 
