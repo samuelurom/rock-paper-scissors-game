@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  color: rgb(245, 245, 245);
+  background: rgb(2, 74, 87);
+}
+
+.container {
+  height: 100vh;
+  width: 80%;
+  margin: auto;
+}
+
+header h1{
+  font-weight: 600;
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.score-board {
+  display: flex;
+  justify-content: space-around;
+  height: 25vh;
+  align-items: center;
+}
+
+.score-board p {
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+.player-score, .computer-score {
+  text-align: center;
+  border: 1px solid rgb(245, 245, 245);
+  width: 180px;
+  border-radius: 4px;
+  padding-top: 10px;
+}
+
+.enter-game {
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+button {
+  padding: 10px;
+  font-size: 1.2em;
+  background: rgb(1, 141, 97);
+  border: none;
+  color: rgb(245, 245, 245);
+  border-radius: 5px;
+  transition: all 0.5s; 
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 150px;
+}
+
+button:hover {
+  background: rgb(0, 43, 44);
+}
+
+.play {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -84%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 30vh;
+  text-align: center;
+  opacity: 0;
+  width: 80%;
+  max-width: 700px;
+  pointer-events: none;
+  transition: all 0.5s ease 0.5s;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.options img {
+  transition: all 0.5s;
+  background: rgb(1, 141, 97);
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.options img:hover {
+  background: rgb(0, 43, 44);
+}
+
+.game-play {
+  position: absolute;
+  transform: translate(-50%, -90%);
+  left: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease 0.6s;
+}
+
+.computer-hand {
+  transform: rotateY(180deg);
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+}
+
+.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.fade-in {
+  opacity: 1;
+  pointer-events: all;
+}
